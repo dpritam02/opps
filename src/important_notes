@@ -1,0 +1,7 @@
+* java don't have sizeof() function like c++.
+* empty class is allocated with 1 byte if memory space
+* Padding ensures that fields are aligned properly in memory but can lead to wasted space if not managed efficiently.
+* Greedy alignment attempts to optimize the layout of fields to reduce padding while ensuring the memory alignment rules are followed.
+eg:  Fields are arranged by the JVM according to their size to minimize the need for padding.
+     Typically, larger fields (e.g., long or double) are placed first, followed by smaller fields (int, short, byte).
+     This strategy reduces the total memory footprint by minimizing the number of unused padding bytes.
