@@ -5,3 +5,7 @@
 eg:  Fields are arranged by the JVM according to their size to minimize the need for padding.
      Typically, larger fields (e.g., long or double) are placed first, followed by smaller fields (int, short, byte).
      This strategy reduces the total memory footprint by minimizing the number of unused padding bytes.
+* after declaring parameterized / non-parameterized constructor, the default constructor dies.
+* Java avoids creating a default copy constructor because shallow copying (copying references for objects)
+  might not be sufficient or safe for certain cases.
+  Complex objects with deep data structures often need custom logic to ensure proper copying (deep copying).
