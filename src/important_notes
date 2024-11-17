@@ -10,5 +10,5 @@ eg:  Fields are arranged by the JVM according to their size to minimize the need
   might not be sufficient or safe for certain cases.
   Complex objects with deep data structures often need custom logic to ensure proper copying (deep copying).
 
-* piller of oops
-1. Encapsulation
+* Use public when you want the field or method to be freely accessible by all classes.
+* Use protected when you need to allow inheritance and package-level access but still maintain some level of encapsulation from non-subclass external classes.
