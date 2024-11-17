@@ -12,3 +12,4 @@ eg:  Fields are arranged by the JVM according to their size to minimize the need
 
 * Use public when you want the field or method to be freely accessible by all classes.
 * Use protected when you need to allow inheritance and package-level access but still maintain some level of encapsulation from non-subclass external classes.
+* Java does not support multiple inheritance with classes directly (to avoid the diamond problem). However, it supports multiple inheritance through interfaces.
